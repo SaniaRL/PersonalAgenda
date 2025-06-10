@@ -24,14 +24,15 @@ export default function StatusDisplay({statusMessage, moreInfo}: StatusDisplayPr
         display: 'flex',
         justifyContent: 'center',
         gap: 2,
-        marginBottom: '2px',
+        paddingBottom: '4px',
         alignItems: 'center'
       }}>
 
       <StatusIcon
         status={statusMessage?.status ?? null}
         sx={{
-          fontSize: '18px'
+          alignSelf: 'center',
+          fontSize: '20px'
         }}/>
 
       <Typography>

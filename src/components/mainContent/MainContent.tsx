@@ -33,7 +33,7 @@ export default function MainContent() {
             setStatus('PROBLEMATIC_BUTTON')
           }}
         >
-          Stop loading problematic?
+          Start loading problematic?
         </Button>
         <Button 
           onClick={() => {
