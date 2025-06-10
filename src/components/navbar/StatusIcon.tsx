@@ -1,5 +1,5 @@
-import WarningIcon from '@mui/icons-material/Warning'
-import ErrorIcon from '@mui/icons-material/Error'
+import WarningAmberOutlinedIcon from '@mui/icons-material/WarningAmberOutlined'
+import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined'
 
 import type { StatusLevel } from '../../types/ui/StatusMessage'
 import type { SxProps, Theme } from '@mui/material'
@@ -13,8 +13,8 @@ export default function StatusIcon({status, sx}: StatusIconProps) {
   if(!status) return null
   switch(status) {
     case 'warning':
-      return( <WarningIcon sx={ sx }/> )
+      return( <WarningAmberOutlinedIcon sx={ sx }/> )
     case 'error':
-      return( <ErrorIcon sx={{ fontSize: '16px'}} /> )
+      return( <ErrorOutlineOutlinedIcon sx={ sx } /> )
   }
 }
