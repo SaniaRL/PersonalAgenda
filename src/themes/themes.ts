@@ -10,7 +10,7 @@ const lightTheme = createTheme({
     secondary: { main: grey[600], contrastText: grey[900] },
     background: {
       default: grey[100],
-      paper: grey[50],
+      paper: '#ffffff',
     },
   },
   components: {
@@ -29,6 +29,10 @@ const darkTheme = createTheme({
     mode: 'dark',
     primary: { main: grey[700], contrastText: grey[200] },
     secondary: { main: grey[800], contrastText: grey[200] },
+    background: {
+      default: grey[900],
+      paper: grey[800],
+    }
   },
 })
 
